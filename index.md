@@ -35,6 +35,8 @@ Time to google MIPS calling convention. MIPS puts first four arguments in regist
 
 The code to calculate **gp** is produced by compiler. Normally in last instruction the used register is **t9** and not **ra** but in entry point they both are the same. Since we call every function throug **t9** its content is the functions virtual address. So now we can calculate the value of **gp** and get to main symbol. I had both disassembly and original source code side by side so i could analyze any differences between them and manually rename functions based on source code.
 
+I found one more great intro to radare2: [http://blog.dutchcoders.io/getting-started-with-radare2/](http://blog.dutchcoders.io/getting-started-with-radare2/)
+
 
 
 [1]: http://jcjc-dev.com/2016/04/08/reversing-huawei-router-1-find-uart/
